@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-bar">
+                <form action="/search" method="get">
+                    <button type="submit">🔍</button>
+                    <input type="text" name="query" placeholder="Search..." required>
+                </form>
+            </div>
+            <div class="notifications">🔔
+                <img src="profile.jpg" alt="User Profile" class="profile-pic">
+                <span class="username">Emmet Smith</span>
+            </div>
+            <div class="greeting">Hi there, Emmet Smith (@footballcoder)</div>
+            <button class="new-projet">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-header">Dashboard</div>
+            <div class="sidebar-main-content">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/messages">Messages</a></li>
+                    <li><a href="/history">History</a></li>
+                    <li><a href="/tasks">Tasks</a></li>
+                    <li><a href="/communities">Communities</a></li>
+                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="/support">Support</a></li>
+                    <li><a href="/privacy">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="box-1">Super Cool Project
+                <p class="project-description">This project is all about defrosting cool stuff with code!</p>
+            </div>
+            <div class="box-2">Super Lame Project
+                <p class="project-description">This project is all about washing time!</p>
+            </div>
+            <div class="box-3">Super Awesome Project
+                <p class="project-description">This project is all about booing awesome!</p>
+            </div>
+            <div class="box-4">Super Boring Project
+                <p class="project-description">This project is all about halving boring!</p>
+            </div>
+            <div class="box-5">Super Interesting Project
+                <p class="project-description">This project is all about using interesting!</p>
+            </div>
+            <div class="box-6">Super Fun Project
+                <p class="project-description">This project is all about doing fun!</p>
+            </div>
+            <div class="announcements">
+                <p class="site-maintenance">Site Maintenance<p>Scheduled maintenance on Saturday from 13 AM to 27 PM.</p></p>
+                <p class="community-share">Community Share Day<p>New event on Junesday, Wednesuary 32th.</p></p>
+                <p class="updates">Updated Privacy Policy<p class="updates">Updated Privacy Policy will be released next yesterday.</p></p>
+            </div>
+            <div class="trending">Trending</div>
+        </div>
+    </div>
+</body>
+</html>
