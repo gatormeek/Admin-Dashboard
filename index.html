@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2dumb</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="header-row-one">
+        <div class="sidebar">
+            <ul>
+                <li class="sidebar-header"><img src="img/dashboard.png"><h2> DASHBOARD</h2></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/messages">Messages</a></li>
+                <li><a href="/history">History</a></li>
+                <li><a href="/tasks">Tasks</a></li>
+                <li><a href="/communities">Communities</a></li>
+                <li class="empty"> </li>
+                <li><a href="/settings">Settings</a></li>
+                <li><a href="/support">Support</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="header-row-one">
                 <div class="search-bar">
+                    <button class="submit" type="submit">🔍</button>
                     <form action="/search" method="get">
-                        <button type="submit">🔍</button>
                         <input type="text" name="query" placeholder="Search..." required>
                     </form>
                 </div>
-                <div class="notifications"><button>🔔</button></div>
-                <div class="user-profile">
-                    <img src="profile.jpg" alt="User Profile" class="profile-pic">
-                    <span class="username">Emmet Smith</span>
+                <div class="header-right-group">
+                    <div class="notifications"><button>🔔</button></div>
+                    <div class="user-profile">
+                        <img src="img/profile.jpg" alt="User Profile" class="profile-pic">
+                        <span class="username">Emmet Smith</span>
+                    </div>
                 </div>
             </div>
             <div class="header-row-two">
@@ -28,47 +46,47 @@
                 <button class="upload">Upload</button>
                 <button class="share">Share</button>
             </div>
-        </div>
-        <div class="sidebar">
-            <div class="sidebar-main-content">
-                <ul>
-                    <li><h2>Dashboard</h2></li>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/messages">Messages</a></li>
-                    <li><a href="/history">History</a></li>
-                    <li><a href="/tasks">Tasks</a></li>
-                    <li><a href="/communities">Communities</a></li>
-                    <li></li>
-                    <li><a href="/settings">Settings</a></li>
-                    <li><a href="/support">Support</a></li>
-                    <li><a href="/privacy">Privacy</a></li>
-                </ul>
             </div>
-        </div>
-        <div class="main">
-            <div class="main-content">
-                <div class="main-main">
-                    <div class="box-1"><h3>Super Cool Project</h3>
+            <div class="body">
+                <div class="body-content">
+                    <div class="item one"><h3>Super Cool Project</h3>
                         <p class="project-description">This project is all about doing cool stuff with code! aslkdjfaslkdgjaklwegh asdglk jgasj dlgkj asdklgj asldgj askldgj aks jdgkjls </p>
                     </div>
-                    <div class="box-2"><h3>Super Lame Project</h3>
+                    <div class="item two"><h3>Super Lame Project</h3>
                         <p class="project-description">This project is all about wasting time! alskdjf s  jafslkd fjaslkdj klsdj gfsakjdlg skldgjaslkdg jaskdlg  gnlkgjalkdg </p>
                     </div>
-                    <div class="box-3"><h3>Super Awesome Project</h3>
+                    <div class="item three"><h3>Super Awesome Project</h3>
                         <p class="project-description">This project is all about booing awesome! aslkdjf a lskd jgakwej glka sgkl ajsdklgj awkl ejgamlsk jeg</p>
                     </div>
-                    <div class="box-4"><h3>Super Boring Project</h3>
+                    <div class="item four"><h3>Super Boring Project</h3>
                         <p class="project-description">This project is all about halving boring! askl dnfkals djf lkasdkfj asldj fklas djfkl a sjdklf jkasdj flk</p>
                     </div>
-                    <div class="box-5"><h3>Super Interesting Project</h3>
+                    <div class="item five"><h3>Super Interesting Project</h3>
                         <p class="project-description">This project is all about using interesting! aslkd jfaskjld fjklasdj fkl ajsdklfj askldj fklas jdkfja slkdfj </p>
                     </div>
-                    <div class="box-6"><h3>Super Fun Project</h3>
+                    <div class="item six"><h3>Super Fun Project</h3>
+                        <p class="project-description">This project is all about doing fun! alskd jfalksd jfkl asdj flasjdkl faskld jfklasj dklf ajsdlfj </p>
+                    </div>
+                    <div class="item seven"><h3>Super Cool Project</h3>
+                        <p class="project-description">This project is all about doing cool stuff with code! aslkdjfaslkdgjaklwegh asdglk jgasj dlgkj asdklgj asldgj askldgj aks jdgkjls </p>
+                    </div>
+                    <div class="item eight"><h3>Super Lame Project</h3>
+                        <p class="project-description">This project is all about wasting time! alskdjf s  jafslkd fjaslkdj klsdj gfsakjdlg skldgjaslkdg jaskdlg  gnlkgjalkdg </p>
+                    </div>
+                    <div class="item nine"><h3>Super Awesome Project</h3>
+                        <p class="project-description">This project is all about booing awesome! aslkdjf a lskd jgakwej glka sgkl ajsdklgj awkl ejgamlsk jeg</p>
+                    </div>
+                    <div class="item ten"><h3>Super Boring Project</h3>
+                        <p class="project-description">This project is all about halving boring! askl dnfkals djf lkasdkfj asldj fklas djfkl a sjdklf jkasdj flk</p>
+                    </div>
+                    <div class="item eleven"><h3>Super Interesting Project</h3>
+                        <p class="project-description">This project is all about using interesting! aslkd jfaskjld fjklasdj fkl ajsdklfj askldj fklas jdkfja slkdfj </p>
+                    </div>
+                    <div class="item twelve"><h3>Super Fun Project</h3>
                         <p class="project-description">This project is all about doing fun! alskd jfalksd jfkl asdj flasjdkl faskld jfklasj dklf ajsdlfj </p>
                     </div>
                 </div>
-                <div class="main-content-sidebar">
+                <div class="body-sidebar">
                     <div class="announcements">
                         <p class="site-maintenance"><h4>Site Maintenance</h4><p>Scheduled maintenance on Saturday from 13 AM to 27 PM.</p></p>
                         <p class="community-share"><h4>Community Share Day</h4><p>New event on Junesday, Wednesuary 32th.</p></p>
